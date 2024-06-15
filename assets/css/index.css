@@ -10,8 +10,8 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-.banner-swiper{
-    height: 90vh;
+.banner-swiper, .banner-content img, .banner-swiper .banner-mobile{
+    height: 100vh;
 }
 
 .banner-content{
@@ -23,6 +23,37 @@ body{
     z-index: 5;
     top: 80px;
     left: 50px;
+}
+
+.banner-swiper .banner-mobile .banner-mobile-desc{
+    position: absolute;
+    z-index: 5;
+    color: #fff;
+    overflow: hidden;
+    top: 80px;
+    left: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .banner-swiper .banner-content .banner-desc h3{
+        font-size: 8vw;
+    }
+    .banner-swiper .banner-content .banner-desc p{
+        font-size: 3.5vw;
+
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .banner-swiper .banner-mobile .banner-mobile-desc h1{
+        font-size: 15vw;
+    }
+}
+
+.banner-swiper .banner-mobile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 .swiper {
