@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.banner-swiper{
+    height: 90vh;
+}
+
+.banner-content{
+    position: relative;
+}
+
+.banner-desc{
+    position: absolute;
+    z-index: 5;
+    top: 80px;
+    left: 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 90vh;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(176,166,149);
+    background: linear-gradient(90deg, rgba(176,166,149,1) 0%, rgba(67,83,52,1) 54%, rgba(108,135,84,1) 100%);
+    opacity: 70%;
+    pointer-events: none;
+}
+
+.about .kns-logo img{
+    max-width: 50%;
+}
+
+.slogan h4{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #d9d9d9;
+    color: #fff;
+}
+
+@media only screen and (max-width: 375px){
+    .slogan #kns{font-size: 1rem;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .slogan h4{
+        font-size: 0.8rem;
+    }
+}
+
+.event .event-list .event-desc{
+    color: #435334;
+}
+
+.event .event-list .event-desc h2{
+    background-color: #d9d9d9;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #86A789;
+}
+
+
+@media only screen and (max-width: 320px){
+    .event .event-list p{
+        font-size: 0.8rem;
+    }
+    .event .event-list img{
+        max-width: 80%;
+    }    
+}
+
+
+.gallery-box img{
+    max-width: 300px;
+}
+
+.gallery-desc{
+    background-color: #435334b6;
+    min-width: 300px;
+    max-width: 400px;
+    height: 0;
+    bottom: 0;
+    transition: .5s ease;
+}
+
+.galleries:hover .gallery-desc{ height: 100%;}
+
+
+.visimisi .visimisi-container .visi-container, .visimisi .visimisi-container .misi-container{
+    background: rgb(69,85,53);
+    background: linear-gradient(180deg, rgba(69,85,53,1) 10%, rgba(106,132,82,1) 50%);
+}
+
+.struktur .struktur-box p{
+    font-weight: 600;
+}
+
+.donate .donate-info{
+    background: rgb(79,98,61);
+    background: linear-gradient(190deg, rgba(79,98,61,1) 0%, rgba(108,135,84,1) 70%);
+}
+
+.donate .donate-info img{
+    max-width: 150px;
+}
+
+.gallery .gallery-filter{
+    background: rgb(79,98,61);
+    background: linear-gradient(190deg, rgba(79,98,61,1) 0%, rgba(108,135,84,1) 70%);
+}
+
+.gallery .gallery-filter li{
+    padding: 10px 15px;
+    background-color: #5E7549;
+    border-radius: 10px;
+    color: #fff;
+    transition: ease-in-out .2s;
+    border: 1px solid #D9D9D9;
+    margin: 5px;
+    cursor: pointer;
+    list-style-type: none
+}
+
+.gallery .gallery-filter li:hover{
+    background-color: #435334;
+    color: #D9D9D9;
+}
+
+.gallery .gallery-img img{
+    border-radius: 10px;
+    cursor: zoom-in;
+    transition: ease-in-out .3s;
+}
+
+.gallery .gallery-img img:hover{
+    transform: scale(1.1);
+}
+
+.gallery .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%; width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.gallery .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50rem;
+
+}
+
+.donate .donate-info .donate-icon a{
+    color: #fff;
+}
+
+.donate .donate-info .donate-icon a:hover{
+    color: #D9D9D9;
+}

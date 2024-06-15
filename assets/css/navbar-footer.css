@@ -1,0 +1,36 @@
+nav{
+    background: rgb(69,85,53);
+    background: linear-gradient(90deg, rgba(69,85,53,1) 10%, rgba(106,132,82,1) 50%);
+}
+
+nav .navbar-nav a{
+    color: #fff;
+}
+
+nav .navbar-nav a:hover{
+    color: #d9d9d9;
+}
+
+.navbar-nav .nav-link.active{
+    color: #C0C0C0;
+}
+
+footer{
+    position: sticky;
+    top: 100%;
+}
+
+footer .footer-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-links a:hover{
+    color: #d9d9d9;
+}
+
+@media only screen and (max-width: 374px){
+    footer .footer-links #email{
+        font-size: 0.8rem;
+    }
+}
