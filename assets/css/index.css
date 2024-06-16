@@ -44,6 +44,26 @@ body{
     }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    .banner-swiper .banner-content .banner-desc h3{
+        font-size: 4.5vw;
+    }
+    .banner-swiper .banner-content .banner-desc p{
+        font-size: 1.8vw;
+
+    }
+}
+
+@media only screen and (min-width: 1441px){
+    .banner-swiper .banner-content .banner-desc h3{
+        font-size: 3.5vw;
+    }
+    .banner-swiper .banner-content .banner-desc p{
+        font-size: 1.5vw;
+
+    }
+}
+
 @media only screen and (max-width: 767px){
     .banner-swiper .banner-mobile .banner-mobile-desc h1{
         font-size: 15vw;
